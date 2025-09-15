@@ -1,8 +1,8 @@
 // router/DID_Router.js
 const express = require('express');
 const { body } = require('express-validator');
-const { authenticateToken } = require('../middleware/auth');
-const didController = require('../controllers/didController'); // Fixed - removed .cjs
+const { authenticateToken } = require('../middleware/auth.cjs');
+const didController = require('../controllers/didController.cjs'); // Fixed - removed .cjs
 
 const router = express.Router();
 

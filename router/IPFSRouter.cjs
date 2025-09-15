@@ -1,8 +1,8 @@
 // router/ipfs.js
 const express = require('express');
 const { body } = require('express-validator');
-const { authenticateToken } = require('../middleware/auth');
-const ipfsController = require('../controllers/ipfsController'); // Fixed - removed .cjs
+const { authenticateToken } = require('../middleware/auth.cjs');
+const ipfsController = require('../controllers/ipfsController.cjs'); // Fixed - removed .cjs
 
 const router = express.Router();
 

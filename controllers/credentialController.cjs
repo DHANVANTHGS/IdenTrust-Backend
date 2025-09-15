@@ -1,6 +1,6 @@
 // controllers/credentialController.js
 const { validationResult } = require('express-validator');
-const { credentialRegistry, ethers, revocationRegistry } = require('../utils/blockchain');
+const { credentialRegistry, ethers, revocationRegistry } = require('../utils/blockchain.cjs');
 
 class CredentialController {
     async issueCredential(req, res) {

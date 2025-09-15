@@ -4,12 +4,12 @@ const connectDB = require("./config/config.cjs");
 require('dotenv').config();
 
 const mainRouter = require('./router/main_router.cjs');
-const authRouter = require('./router/authRouter.js');
-const credentialsRouter = require('./router/Credentials_Router.js');
-const didRouter = require('./router/DID_Router.js');
-const ipfsRouter = require('./router/ipfs.js');
-const revocationRouter = require('./router/revocationRouter.js');
-const schemaRouter = require('./router/schemaRouter.js');
+const authRouter = require('./router/authRouter.cjs');
+const credentialsRouter = require('./router/Credentials_Router.cjs');
+const didRouter = require('./router/DID_router.cjs');
+const ipfsRouter = require('./router/ipfs.cjs');
+const revocationRouter = require('./router/revocationRouter.cjs');
+const schemaRouter = require('./router/SchemaRouter.cjs');
 
 const app = express();
 const port = 3000;

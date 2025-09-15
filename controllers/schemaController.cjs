@@ -1,5 +1,5 @@
 const { validationResult } = require('express-validator');
-const { schemaRegistry } = require('../utils/blockchain');
+const { schemaRegistry } = require('../utils/blockchain.cjs');
 
 class SchemaController {
     async createSchema(req, res) {

@@ -1,5 +1,5 @@
 const { validationResult } = require('express-validator');
-const { revocationRegistry } = require('../utils/blockchain');
+const { revocationRegistry } = require('../utils/blockchain.cjs');
 
 class RevocationController {
   async revokeCredential(req, res) {

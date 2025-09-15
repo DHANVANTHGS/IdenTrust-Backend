@@ -1,8 +1,8 @@
 // router/Credentials_Router.js (or .cjs)
 const express = require('express');
 const { body } = require('express-validator');
-const { authenticateToken } = require('../middleware/auth');
-const credentialController = require('../controllers/credentialController'); // Fixed name
+const { authenticateToken } = require('../middleware/auth.cjs');
+const credentialController = require('../controllers/credentialController.cjs'); // Fixed name
 
 const router = express.Router();
 

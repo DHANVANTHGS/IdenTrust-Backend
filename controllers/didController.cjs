@@ -1,6 +1,6 @@
 // controllers/didController.js
 const { validationResult } = require('express-validator');
-const { didRegistry, ethers } = require('../utils/blockchain');
+const { didRegistry, ethers } = require('../utils/blockchain.cjs');
 const crypto = require('crypto');
 
 class DIDController {

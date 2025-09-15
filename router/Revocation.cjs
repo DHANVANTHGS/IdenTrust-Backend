@@ -1,7 +1,7 @@
 const express = require('express');
 const { body, param } = require('express-validator');
-const { authenticateToken } = require('../middleware/auth');
-const revocationController = require('../controllers/revocationController');
+const { authenticateToken } = require('../middleware/auth.cjs');
+const revocationController = require('../controllers/revocationController.cjs');
 
 const router = express.Router();
 
